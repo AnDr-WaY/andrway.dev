@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>andrway.dev</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- Intro Screen -->
+    <div id="intro-screen" class="screen active">
+        <h1 id="intro-title" class="glitch-text" data-text="andrway.dev"></h1>
+        <p id="intro-prompt" class="blink-text hidden">press any button to continue</p>
+    </div>
+
+    <!-- Main Content Screen -->
+    <div id="main-screen" class="screen hidden">
+        <header>
+            <div class="header-left">
+                <h1 class="glitch-text" data-text="andrway.dev">andrway.dev</h1>
+                <button id="theme-toggle" class="glitch-hover">MODE: DARK</button>
+            </div>
+            <nav>
+                <a href="#about" class="glitch-hover">About</a>
+                <a href="#skills" class="glitch-hover">Skills</a>
+                <a href="#projects" class="glitch-hover">Projects</a>
+                <a href="https://github.com/AnDr-WaY" target="_blank" class="glitch-hover">GitHub</a>
+            </nav>
+        </header>
+
+        <main class="wrapper">
+            <section id="about" class="pixel-box">
+                <div class="description">
+                    <h2 class="glitch-text" data-text="> init_profile"></h2>
+                    <p class="scramble-text">Passionate Developer & NixOS User. Crafting robust backends, intelligent bots, and pixel-perfect UIs.</p>
+                </div>
+                <div class="avatar-container">
+                    <img src="avatar.png" alt="Avatar" class="avatar-img" draggable="false">
+                </div>
+            </section>
+
+            <section id="skills" class="pixel-box">
+                <h2 class="glitch-text" data-text="> sys.skills"></h2>
+                <ul class="skills-list">
+                    <li class="scramble-text">Python (Backend, ML, Bots & Automation)</li>
+                    <li class="scramble-text">JS / TS / Next.js (Frontend)</li>
+                    <li class="scramble-text">Lua (Game Dev)</li>
+                    <li class="scramble-text">Java (Minecraft Modding)</li>
+                </ul>
+            </section>
+
+            <section id="projects" class="pixel-box">
+                <h2 class="glitch-text" data-text="> ls ./projects"></h2>
+                <div class="projects-grid">
+                    <a href="https://clienteria.work" target="_blank" class="project-link project-card glitch-hover">
+                        <h3>clienteria.work</h3>
+                        <p class="scramble-text">Booking system for specialists and studios.</p>
+                    </a>
+                    <a href="https://github.com/AnDr-WaY/dota-stats" target="_blank" class="project-link project-card glitch-hover">
+                        <h3>dota-stats</h3>
+                        <p class="scramble-text">Open-source Dota 2 parser.</p>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="scramble-text">SYSTEM OFFLINE.</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
