@@ -85,6 +85,19 @@ body {
     text-transform: uppercase;
 }
 
+/* Responsive intro-title */
+@media (max-width: 768px) {
+    #intro-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #intro-title {
+        font-size: 1.8rem;
+    }
+}
+
 #intro-prompt {
     font-size: 1.5rem;
     color: var(--text-dim);
